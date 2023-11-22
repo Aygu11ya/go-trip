@@ -1,0 +1,174 @@
+@media(max-width:1250px){
+    .header-nav .container{
+        gap: 160px;
+    }
+    .catalog-content ul{
+        gap: 10px;
+    }
+    .contacts .container h2{
+        padding: 100px 0 50px;
+    
+     }
+    
+     .header-nav-list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0cdcdcd6;;
+        inset: 0;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        transform: translateY(-100%);
+        transition: 1s;
+        font-size: 35px;
+    }
+    .burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .burger:hover ~.header-nav-list{
+        transform: translateY(0);
+    }
+}
+@media(max-width:1110px){
+    .header{
+        background: url(../img/gotrip.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .catalog-content ul{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 30px;
+        
+    }
+    .catalog-content a {
+        gap: 5px;
+    }
+   .about .container{
+    flex-direction: column;
+   }
+}
+@media(max-width:800px){
+    .header-nav .container{
+        gap: 40px;
+    }
+    .header-container a{
+        padding: 10px 50px;
+        font-size: 25px;
+    }
+    .search-form_txt{
+        width: 150px;
+            
+    }
+    .search-form {
+        height: 40px;
+    }
+    .ct{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .contacts p{
+        text-align: center;
+    }
+
+}
+@media(max-width:560px){
+    .search-form {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0cdcdcd6;;
+        inset: 0;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        transform: translateY(-100%);
+        transition: 1s;
+        font-size: 35px;
+    }
+    .search{
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .search:hover ~.search-form{
+        transform: translateY(0);
+    }
+    .search-form_btn{
+        display: none;
+    }
+    
+    h1{
+        font-size: 60px;
+    }
+    .header-container p {
+        font-size: 35px;
+    }
+    .catalog-content ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .search-form_txt{
+        width: 100px;
+        font-size: 15px;
+    }
+    .footer-content ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media(max-width:460px){
+    h1{
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .header-nav .container>a {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .header-container p{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .header-container a{
+        font-size: 20px;
+        font-weight: 300;
+        padding: 10px 35px;
+    }
+    .main h2 {
+        
+        font-size: 30px;
+        font-weight: 400;
+        padding: 10px 0 30px;
+    }
+    .about-content ul{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .catalog-content a{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .contacts .container{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .footer-content ul{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .footer .container p{
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
